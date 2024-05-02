@@ -1,0 +1,71 @@
+.manifest {
+    padding: 70px 0 230px;
+    position: relative;
+
+    &:after {
+        content: "";
+        height: 350px;
+        width: 100%;
+        background-image: url(/img/gmap.jpg);
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+    .manifest-content {
+        margin: 0 auto;
+        padding: 50px 70px;
+        width: 60vw;
+        background-color: $white2;
+        font-family: $font3;
+        position: relative;
+        z-index: 3;
+
+        &:before {
+            content: "";
+            position: absolute;
+            background: url(/img/avatar-02.jpg);
+            background-position: center;
+            background-size: cover;
+            width: 70px;
+            height: 70px;
+            border-radius: 150px;
+            top: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 4;
+        }
+
+        .manifest-ceo {
+            p {
+                margin: 20px 0;
+                line-height: 30px;
+
+                &:before {
+                    content: "❝";
+                }
+
+                &:after {
+                    content: "❞";
+                }
+
+                &:before,
+                &:after {
+                    font-size: 1.5rem;
+                }
+            }
+
+            h5 {
+                font-size: 1.1rem;
+                margin-bottom: 10px;
+            }
+
+            h6 {
+                font-size: 0.9rem;
+                color: $brown;
+            }
+        }
+    }
+}

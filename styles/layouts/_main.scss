@@ -1,0 +1,70 @@
+main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    @media screen and (max-width: 1000px) {
+        display: flex;
+    }
+
+    .main-left {
+        background-color: $white2;
+        display: flex;
+
+        .main-left-content {
+            margin: 20px;
+            padding: 50px 20px;
+            border: 2px dotted $brown;
+
+            h2 {
+                @include title2;
+                font-size: 2rem;
+            }
+
+            h4 {
+                font-family: $font1;
+                font-size: 1.1rem;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+
+            img {
+                margin: 20px 0;
+                width: 30px;
+            }
+
+            p {
+                font-family: $font3;
+                font-size: 1rem;
+                line-height: 30px;
+            }
+
+            .russel-stephens {
+                img {
+                    width: 70px;
+                    border-radius: 150px;
+                }
+
+                h5 {
+                    font-family: $font1;
+                    font-size: 1rem;
+                }
+
+                h6 {
+                    font-family: $font3;
+                    color: $grey;
+                    font-size: 0.7rem;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+
+    .main-right {
+        background-image: url(/img/store-01.jpg);
+        background-position: center;
+
+        @media screen and (max-width: 1000px) {
+            display: none;
+        }
+    }
+}
